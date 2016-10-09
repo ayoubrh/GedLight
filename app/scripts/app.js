@@ -12,7 +12,6 @@ angular
   .module('gedlightApp', [
     'ngResource',
     'ngRoute',
-    'angularTree',
     'angularTreeview'
   ])
   .config(function ($routeProvider) {

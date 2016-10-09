@@ -1,0 +1,27 @@
+var template =
+  '<ul>' +
+    '<li data-ng-repeat="node in ' + treeModel + '">' +
+      '<i ng-class="node.first == true ? "fa fa-archive" : "collapsed"" data-ng-show="node.' + nodeChildren + '.length && node.collapsed" data-ng-click="' + treeId + '.selectNodeHead(node)"></i>' +
+      '<i ng-class="node.first == false ? "fa fa-archive" : "expanded"" data-ng-show="node.' + nodeChildren + '.length && !node.collapsed" data-ng-click="' + treeId + '.selectNodeHead(node)"></i>' +
+      '<i class="normal" data-ng-hide="node.' + nodeChildren + '.length"></i> ' +
+      '<span data-ng-class="node.selected" data-ng-click="' + treeId + '.selectNodeLabel(node)">{{node.' + nodeLabel + '}}</span>' +
+      '<div data-ng-hide="node.collapsed" data-tree-id="' + treeId + '" data-tree-model="node.' + nodeChildren + '" data-node-id=' + nodeId + ' data-node-label=' + nodeLabel + ' data-node-children=' + nodeChildren + '></div>' +
+    '</li>' +
+  '</ul>';
+
+
+
+
+
+
+https://github.com/search?l=JavaScript&q=file+viewer&ref=searchresults&type=Repositories&utf8=%E2%9C%93
+
+http://jsfiddle.net/eu81273/b9Pnw/
+
+http://ngmodules.org/modules/angular.treeview
+
+https://github.com/sayanee/angularjs-pdf
+
+https://github.com/sayanee/angularjs-pdf
+
+https://github.com/eu81273/angular.treeview
