@@ -4,11 +4,12 @@
                   <span><b>First Tree's Selected Node</b> : <br>{{tree01.currentNode.roleName}}</span>
               </div>
           </div> -->
-          <div style="display:table-cell; width:250px;">
+          <!-- <div style="display:table-cell; width:250px;">
               <div style="margin:10px 5px 30px 5px; padding:10px; background-color:#EEEEEE; border-radius:5px; font:12px Tahoma;">
                   <span><b>Selected </b> : <br>{{tree02.currentNode.roleName}}</span>
               </div>
-          </div>
+          </div> -->
+          <button ng-click="add()">Add</button>
       </div>
 
 
@@ -26,9 +27,8 @@
 
 
           </div> -->
-          <div style="display:table-cell; width:250px;">
+          <!-- <div style="display:table-cell; width:250px;">
 
-              <!-- SECOND TREE -->
               <div
               data-angular-treeview="false"
               data-tree-id="tree02"
@@ -39,5 +39,23 @@
               </div>
 
 
+          </div> -->
+
+
+          <h1>NG Tree</h1>
+          <div
+            js-tree="treeConfig"
+            ng-model="treeData"
+            should-apply="ignoreModelChanges()"
+            tree="treeInstance"
+            tree-events="ready:readyCB;create_node:createNodeCB;before_open:before">
           </div>
+          <!-- <div
+            js-tree="vm.treeConfig"
+            should-apply="vm.applyModelChanges()"
+            ng-model="vm.treeData"
+            tree="vm.treeInstance"
+            tree-events="before_open:vm.beforeOpen;ready:vm.readyCB;create_node:vm.createCB">
+          </div> -->
+
       </div>
